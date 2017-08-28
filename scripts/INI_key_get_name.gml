@@ -1,4 +1,4 @@
-﻿///INI_key_get_name(ini,section,n)
+///INI_key_get_name(ini,section,n)
 var ini,section,key;
 ini = argument0
 section = argument1

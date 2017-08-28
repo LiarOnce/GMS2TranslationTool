@@ -1,4 +1,4 @@
-﻿//INI_read(ini,section,key/pos,default)
+//INI_read(ini,section,key/pos,default)
 var ini,section,key,def;
 ini = argument0
 section = argument1

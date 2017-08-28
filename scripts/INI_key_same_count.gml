@@ -1,4 +1,4 @@
-﻿//INI_key_same_count(ini,section,key)
+//INI_key_same_count(ini,section,key)
 var sMap;
 sMap = ds_map_find_value(argument0,argument1)
 var l,key;

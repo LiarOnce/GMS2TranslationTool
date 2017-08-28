@@ -1,4 +1,4 @@
-﻿//__Load_ini(list,map)
+//__Load_ini(list,map)
 
 var iniID;
 show_debug_message("------ini loading------")

@@ -1,4 +1,4 @@
-﻿// INI_open(fname) : iniHandle
+// INI_open(fname) : iniHandle
 // open a ini file and return the ini file ID
 // if error return -1
 

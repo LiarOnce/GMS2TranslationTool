@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="5" name="datafiles">
+  <datafiles number="8" name="datafiles">
     <datafile>
       <name>config.ini</name>
       <exists>-1</exists>
@@ -30,7 +30,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\file_check.gml</script>
     <scripts name="MageINI">
       <script>scripts\INI_init.gml</script>
       <script>scripts\INI_open.gml</script>
@@ -56,10 +55,10 @@
   </scripts>
   <objects name="objects">
     <object>objects\object2</object>
-    <object>objects\obj_version</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -1,4 +1,4 @@
-﻿//INI_write(ini,section,key,value)
+//INI_write(ini,section,key,value)
 var ini,section,key,value;
 ini = argument0
 section = argument1
