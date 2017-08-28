@@ -25,13 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>jsonfile = 'i18n.json';
-jsonfileurl = '';
-jsonpath = 'i18n.json';
-http_get_file(jsonfileurl,jsonpath);
+            <string>INI_init();  //Initialize MageINI
+h = INI_open("config.ini");
 
-if (file_exists(jsonfile)){
-    
+file = INI_read(h, "Settings", "mode", "i18n.ini");
+fileurl = INI_read(h, "Settings", "url", "https://liaronce.github.io/gms2translation/dist/i18n.json");
+http_get_file(file,fileurl);
+
+alarm[0] = 100;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!file_exists(file)){
+    show_message("Translations list isn't found, please check your network environment.");
 }
 </string>
           </argument>
@@ -55,7 +81,7 @@ if (file_exists(jsonfile)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sk_fileCopy("C:\alwsl.bat", "D:\alwsl.bat")
+            <string>//sk_fileCopy("C:\alwsl.bat", "D:\alwsl.bat")
 </string>
           </argument>
         </arguments>
