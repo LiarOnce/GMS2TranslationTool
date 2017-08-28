@@ -30,8 +30,8 @@ jsonfileurl = '';
 jsonpath = 'i18n.json';
 http_get_file(jsonfileurl,jsonpath);
 
-if (file_exists(jsonfile)){
-    
+if (!file_exists(jsonfile)){
+    show_message("JSON file not found!");
 }
 </string>
           </argument>
