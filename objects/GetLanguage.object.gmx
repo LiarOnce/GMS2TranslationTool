@@ -28,7 +28,7 @@
             <string>ver = get_string("Version: ", "");
 language = get_string("Language: ","");
 
-i18nlist = INI_open("i18nlist.ini");
+i18nlist = INI_open(working_directory+"i18nlist.ini");
 
 i18n = INI_read(i18nlist, ver, language, "i18n.json");
 i18nurl = INI_read(i18nlist, ver, language+"url", "http://liaronce.coding.me/gms2translation/i18n.json");
@@ -61,7 +61,7 @@ alarm[0] = 100;
             <kind>1</kind>
             <string>if (!file_exists(i18n))
 {
-    show_message("Translations list isn't found, please check your network environment.");
+    show_message("Translation isn't found, please check your network environment.");
 }
 </string>
           </argument>
