@@ -1,4 +1,4 @@
-//INI_close(iniHandle)
+﻿//INI_close(iniHandle)
 var iniMap,isChange,secList,is_file,iniStr;
 iniMap = argument0
 isChange = ds_map_find_value(iniMap,1)

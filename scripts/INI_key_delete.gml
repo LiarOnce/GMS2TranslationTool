@@ -1,4 +1,4 @@
-//INI_key_delete(ini,section,key)
+﻿//INI_key_delete(ini,section,key)
 var ini,section,key;
 ini = argument0
 section = argument1

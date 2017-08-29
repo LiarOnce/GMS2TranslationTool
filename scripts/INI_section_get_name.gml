@@ -1,4 +1,4 @@
-///INI_section_get_name(ini,n)
+﻿///INI_section_get_name(ini,n)
 var list,ini,n;
 ini = argument0
 n = argument1

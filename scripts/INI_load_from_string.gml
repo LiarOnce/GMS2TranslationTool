@@ -1,4 +1,4 @@
-// INI_load_from_string(string) : iniHandle
+﻿// INI_load_from_string(string) : iniHandle
 // open a ini file and return the ini file ID
 // if error return -1
 

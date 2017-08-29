@@ -1,4 +1,4 @@
-var iniMap,secList;
+﻿var iniMap,secList;
 iniMap = argument0
 secList = ds_map_find_value(iniMap,2)
 var i,size,iniStr;
