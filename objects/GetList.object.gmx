@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>INI_init();  //Initialize MageINI
-h = INI_open("config.ini");
+conf = INI_open("config.ini");
 
-file = INI_read(h, "Settings", "mode", "i18n.ini");
-fileurl = INI_read(h, "Settings", "url", "https://liaronce.github.io/gms2translation/dist/i18n.json");
-http_get_file(file,fileurl);
+list = INI_read(conf, "Settings", "mode", "i18n.json");
+listurl = INI_read(conf, "Settings", "url", "https://liaronce.github.io/GMS2TranslationTool/dist/i18n.json");
+http_get_file(listurl, list);
 
 alarm[0] = 100;
 
@@ -56,9 +56,14 @@ alarm[0] = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!file_exists(file)){
+            <string>if (!file_exists(list))
+{
     show_message("Translations list isn't found, please check your network environment.");
-}
+    }
+    else
+    {
+    room_goto_next();
+};
 </string>
           </argument>
         </arguments>

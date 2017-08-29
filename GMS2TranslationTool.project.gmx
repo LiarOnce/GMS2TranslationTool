@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="5" name="datafiles">
+  <datafiles number="9" name="datafiles">
     <datafile>
       <name>config.ini</name>
       <exists>-1</exists>
@@ -21,6 +21,23 @@
       </ConfigOptions>
       <filename>config.ini</filename>
     </datafile>
+    <datafile>
+      <name>i18nlist.ini</name>
+      <exists>-1</exists>
+      <size>200</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>i18nlist.ini</filename>
+    </datafile>
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\sandbox_killer</extension>
@@ -30,7 +47,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\file_check.gml</script>
     <scripts name="MageINI">
       <script>scripts\INI_init.gml</script>
       <script>scripts\INI_open.gml</script>
@@ -55,11 +71,12 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\object2</object>
-    <object>objects\obj_version</object>
+    <object>objects\GetList</object>
+    <object>objects\GetLanguage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
