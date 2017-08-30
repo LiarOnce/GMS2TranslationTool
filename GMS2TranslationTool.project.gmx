@@ -26,7 +26,9 @@
     <extension index="0">extensions\sandbox_killer</extension>
   </NewExtensions>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprite0</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -53,13 +55,24 @@
       <script>scripts\__Load_ini.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\GetList</object>
-    <object>objects\GetLanguage</object>
+    <object>objects\Text1</object>
+    <objects name="Get">
+      <object>objects\GetLanguage</object>
+      <object>objects\GetLanguageLatest</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\Install</object>
+      <object>objects\InstallLatese</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\GetLatest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

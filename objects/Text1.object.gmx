@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>INI_init();  //Initialize MageINI
+globalvar conf;
 conf = INI_open("config.ini");
 
 list = INI_read(conf, "Settings", "mode", "i18n.json");
@@ -33,7 +34,6 @@ listurl = INI_read(conf, "Settings", "url", "https://liaronce.github.io/GMS2Tran
 http_get_file(listurl, list);
 
 alarm[0] = 10;
-
 </string>
           </argument>
         </arguments>
@@ -58,12 +58,33 @@ alarm[0] = 10;
             <kind>1</kind>
             <string>if (!file_exists(list))
 {
-    show_message("Translations list isn't found, please check your network environment.");
-    }
-    else
-    {
-    room_goto_next();
+    show_message_async("没有找到翻译文件列表，请检查你的网络连接。");
 };
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_font(font0);
+draw_set_colour(c_black);
+draw_text(x,y,"Checking the translations list.");
 </string>
           </argument>
         </arguments>
