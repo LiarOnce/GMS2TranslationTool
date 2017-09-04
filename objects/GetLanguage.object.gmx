@@ -35,6 +35,7 @@ i18nurl = INI_read(i18nlist, ver, language+"url", "http://liaronce.coding.me/gms
 http_get_file(i18nurl, i18n);
 
 alarm[0] = 100;
+gms2dir = INI_read(conf, "Settings", "gms2dir", "C:\Program Files\GameMaker Studio 2");
 </string>
           </argument>
         </arguments>
@@ -66,8 +67,68 @@ if (file_exists(working_directory+"error.txt"))
 {
     show_message_async("没有下载到指定版本的翻译文件，请检查你的输入是否正确。");
     file_delete(working_directory+"error.txt");
-    room_goto_previous();
+    room_goto(room1);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (file_exists(i18n))
+{
+    sk_fileCopy(working_directory+language, dir+"\Languages");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_font(font0);
+draw_set_colour(c_black);
+draw_text(32, 32, "下载中。。。。。。");
+if (file_exists(working_directory+"error.txt"))
+{
+    draw_text(32, 64, "下载失败！");
+}
+else
+{
+    draw_text(32, 64, "下载成功！");
+};
+
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Get);
+            <string>file_copy_fmns(working_directory+"chinese.csv",working_directory+"chinese.csv.bak");
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,7 @@
             <string>draw_set_font(font0);
 draw_set_colour(c_black);
 draw_sprite(sprite0, 0, x, y);
-draw_text(512, 416, "Install→");
+draw_text(x, y, "CopyTest");
 </string>
           </argument>
         </arguments>

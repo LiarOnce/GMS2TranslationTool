@@ -51,7 +51,7 @@
             <string>draw_set_font(font0);
 draw_set_colour(c_black);
 draw_sprite(sprite0, 0, x, y);
-draw_text(256, 416, "L→");
+draw_text(256, 416, "InstallLatest→");
 </string>
           </argument>
         </arguments>

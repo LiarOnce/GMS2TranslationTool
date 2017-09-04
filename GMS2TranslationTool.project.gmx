@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="9" name="datafiles">
+  <datafiles number="13" name="datafiles">
     <datafile>
       <name>config.ini</name>
       <exists>-1</exists>
@@ -28,6 +28,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\logo1</sprite>
+    <sprite>sprites\logo2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -71,8 +73,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
-    <room>rooms\room2</room>
     <room>rooms\GetLatest</room>
+    <room>rooms\Get</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
